@@ -11,8 +11,8 @@ import SwiftUI
 struct LandingPageView: View {
     
     @State var isActive:Bool = false
-    let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
-        
+    let skyblue = Color(red: 137.0/255.0, green: 213.0/255.0, blue: 255.0/255.0, opacity: 1.0)
+    
         var body: some View {
             VStack {
                 
@@ -24,7 +24,7 @@ struct LandingPageView: View {
                     Text("HoldingPaws")
                         .font(Font.largeTitle)
                         .bold()
-                        .foregroundColor(skyBlue)
+                        .foregroundColor(skyblue)
                     Logo()
 //                        .background(
 //                            Image("background")
@@ -48,6 +48,7 @@ struct LandingPageView: View {
                 }
             }
         }
+    
     struct Logo : View {
         var body: some View {
             return Image("paw")
